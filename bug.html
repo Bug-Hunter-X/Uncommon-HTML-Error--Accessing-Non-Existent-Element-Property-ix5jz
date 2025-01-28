@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Attempting to access a non-existent element property that is not null, resulting in an unexpected behavior.
+    document.getElementById("myDiv").nonExistentProperty.value = "Hello";
+  </script>
+</body>
+</html>
