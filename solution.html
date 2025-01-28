@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Check if the property exists before attempting to access it
+    const myDiv = document.getElementById("myDiv");
+    if (myDiv) {
+        // Add a new property if it does not exist
+        myDiv.myProperty = "Hello";
+        console.log(myDiv.myProperty);
+    } else {
+        console.error("Element with id 'myDiv' not found");
+    }
+  </script>
+</body>
+</html>
